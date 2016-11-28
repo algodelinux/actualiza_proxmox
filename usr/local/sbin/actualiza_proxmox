@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Script para instalar una versión actualizada de proxmox
+#
+# Esteban M. Navas Martin
+# algodelinux@gmail.com
+# Fecha creacion: 14/01/2016
+
+apt-get update && touch /proxmox_install_mode && apt-get -y install proxmox-ve && rm /proxmox_install_mode
